@@ -1,27 +1,35 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* Brand colors*/
+  --orange-color: #EE7214;
+  --main-black: #111110;
+  --main-white: #FBF8F6;
+  --green: #527853;
+  --red: #9C2B3F;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Gray colors*/
+  --main-black: #111110;
+  --dark-green: #1E261E;
+  --dark-grey: #403F3F;
+  --grey: #6F6B6B;
+  --light-grey: #CCCBCB;
+  --main-white: #FBF8F6;
+
+  /* State colors*/
+  --link: #007CD4;
+  --fill-button: #EDEDED;
+  --stroke-button: #D8C9B7;
+
+  /* Gradient colors*/
+  --gradient-button-orange: linear-gradient(124.14deg, #EE7214 13.2%, #F4A322 63.1%, #FAD531 93.71%);
+  --gradient-red: linear-gradient(91.21deg, #FCCD00 12.95%, #C84738 70.76%, #B6143B 98.97%);
+  --gradient-red2: linear-gradient(91.21deg, #B6143B 6.48%, #C84738 43.92%, #FAD531 98.97%);
+  --gradient: linear-gradient(354.43deg, #242323 15.32%, rgba(68, 65, 65, 0.776042) 56.05%, rgba(99, 95, 95, 0.552083) 70.82%, rgba(142, 136, 136, 0.247486) 89.15%, rgba(176, 169, 169, 0) 100.35%);
 }
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
@@ -31,12 +39,5 @@ body {
 }
 
 a {
-  color: inherit;
   text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
