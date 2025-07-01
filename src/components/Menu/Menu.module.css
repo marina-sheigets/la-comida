@@ -1,0 +1,24 @@
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.menu > li > button {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--main-black);
+    font-weight: 500;
+    font-family: var(--font-messiri-sans);
+  
+}
+
+.menu > li button:hover {
+    color: var(--red);
+    transition: color 0.2s ease-in-out;
+}
