@@ -22,9 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${messiriSans.variable}`}>
-        <Header />
-        {children}
-        <Footer />
+        <div className="layout">
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
