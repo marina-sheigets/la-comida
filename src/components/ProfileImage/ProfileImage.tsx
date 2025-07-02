@@ -4,12 +4,13 @@ import React from "react";
 import userImg from "../../../public/user.png";
 import { useRouter } from "next/navigation";
 import styles from "./ProfileImage.module.css";
+import { ROUTES } from "@/constants/routes";
 
 function ProfileImage() {
   const router = useRouter();
 
   const handleNavigateToProfile = () => {
-    router.push("/profile");
+    router.push(ROUTES.PROFILE);
   };
 
   return (

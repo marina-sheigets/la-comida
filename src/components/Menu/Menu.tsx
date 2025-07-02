@@ -1,18 +1,19 @@
 "use client";
 import { useRouter } from "next/navigation";
 import styles from "./Menu.module.css";
+import { ROUTES } from "@/constants/routes";
 
 function Menu() {
   const router = useRouter();
 
   const handleNavigateToRecipes = () => {
-    router.push("/recipes");
+    router.push(ROUTES.RECIPES);
   };
   const handleNavigateToCreateRecipe = () => {
-    router.push("/create-recipe");
+    router.push(ROUTES.CREATE_RECIPE);
   };
   const handleNavigateToMyCookbook = () => {
-    router.push("/my-cookbook");
+    router.push(ROUTES.MY_COOKBOOK);
   };
   return (
     <ul className={styles.menu}>

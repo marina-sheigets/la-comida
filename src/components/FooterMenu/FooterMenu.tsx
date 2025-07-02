@@ -1,20 +1,21 @@
 "use client";
 import { useRouter } from "next/navigation";
 import styles from "./FooterMenu.module.css";
+import { ROUTES } from "@/constants/routes";
 
 function FooterMenu() {
   const router = useRouter();
 
   const handleNavigateToAllRecipes = () => {
-    router.push("/recipes");
+    router.push(ROUTES.RECIPES);
   };
 
   const handleNavigateToMyCookbook = () => {
-    router.push("/my-cookbook");
+    router.push(ROUTES.MY_COOKBOOK);
   };
 
   const handleNavigateToExperts = () => {
-    router.push("/experts");
+    router.push(ROUTES.EXPERTS);
   };
 
   return (

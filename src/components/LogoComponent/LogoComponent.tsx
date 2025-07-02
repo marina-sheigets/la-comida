@@ -3,12 +3,13 @@ import Image from "next/image";
 import logo from "../../../public/logo.svg";
 import styles from "./LogoComponent.module.css";
 import { useRouter } from "next/navigation";
+import { ROUTES } from "@/constants/routes";
 
 function LogoComponent() {
   const router = useRouter();
 
   const handleNavigateToHome = () => {
-    router.push("/");
+    router.push(ROUTES.RECIPES);
   };
 
   return (
