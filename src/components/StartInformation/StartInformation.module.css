@@ -1,0 +1,21 @@
+.startInformation {
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+
+
+.startInformation > div:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.startInformation > div:first-child > p {
+  font-size: 36px;
+  font-weight: 700;
+}

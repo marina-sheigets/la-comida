@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={`${messiriSans.variable}`}>
         <div className="layout">
           <Header />
-          <main>{children}</main>
+          <main className="main">{children}</main>
           <Footer />
         </div>
       </body>

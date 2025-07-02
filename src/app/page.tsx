@@ -1,5 +1,7 @@
+import RecipesComponent from "@/pages/RecipesComponent/RecipesComponent";
+
 function HomePage() {
-  return <div>HomePage</div>;
+  return <RecipesComponent />;
 }
 
 export default HomePage;
