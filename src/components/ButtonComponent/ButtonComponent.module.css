@@ -1,0 +1,71 @@
+.button {
+    padding: 10px 1.5rem;
+    border-radius: 50px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    border: none;
+    font-family: var(--font-messiri-sans);
+}
+
+.gradient-button-orange {
+    background: var(--gradient-button-orange);
+    color: var(--main-white);
+}
+
+.gradient-red2 {
+    background: var(--gradient-red2);
+    color: var(--main-white);
+}
+
+.blank {
+    background: var(--main-white);
+    color: var(--main-black);
+
+    > img {
+        filter: invert(1);
+    }
+}
+
+.red {
+    background: var(--red);
+    color: var(--main-white);
+}
+
+.red-outlined {
+    background: transparent;
+    color: var(--red);
+    border: 1px solid var(--red);
+
+    > img {
+          color: var(--red);
+    }
+}
+
+.text {
+    background: transparent;
+    color: var(--main-black);
+    font-size: 16px;
+
+    > img {
+        filter: invert(1);
+    }
+}
+
+.small {
+    padding: 5px 1rem;
+    font-size: 14px;
+}
+
+.medium {
+    padding: 10px 1.5rem;
+    font-size: 16px;
+}
+
+.large {
+    padding: 15px 2rem;
+    font-size: 18px;
+}
